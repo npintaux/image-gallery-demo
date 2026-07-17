@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGIF Photo Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-accent">TGIF</span> Photo Gallery
+            </div>
+            <div class="stats-badge" id="global-stats">
+                <span class="stats-label">Total Likes</span>
+                <span class="stats-value" id="global-like-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="category-filters">
+            <!-- US3 Filters Placeholder (Stylized for baseline completeness) -->
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="urban">Urban</button>
+            <button class="filter-btn" data-category="minimal">Minimal</button>
+        </div>
+
+        <div class="gallery-info">
+            <span class="engine-badge" id="engine-status">
+                <span class="badge-dot"></span>
+                Engine: <span id="engine-outcome">RENDER_GRID</span> (<span id="engine-rule">R2</span>)
+            </span>
+        </div>
+
+        <div class="photo-grid" id="photo-grid">
+            <!-- Photo cards will be injected by JavaScript -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TGIF Photo Gallery. Scaled and Secured with Google Cloud Well-Architected Core.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[tool.pylint."messages control"]
+disable = [
+    "too-few-public-methods",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src",
+]
